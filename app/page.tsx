@@ -1,11 +1,8 @@
-import { Welcome } from '../components/Welcome/Welcome';
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
+import { PropsWithChildren } from 'react';
 
-export default function HomePage() {
+export default function Home(props: PropsWithChildren) {
+  const { children } = props;
   return (
-    <>
-      <Welcome />
-      <ColorSchemeToggle />
-    </>
-  );
+    <h1>Home</h1>
+  )
 }

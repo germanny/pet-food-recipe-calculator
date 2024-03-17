@@ -1,7 +1,18 @@
 'use client';
 
-import { createTheme } from '@mantine/core';
+import { createTheme, rem } from '@mantine/core';
 
 export const theme = createTheme({
-  /* Put your mantine theme override here */
+  components: {
+    Title: {
+      defaultProps: {
+        styles: {
+          root: {
+            borderBottom: '1px solid var(--mantine-color-default-border)',
+            marginBottom: rem(15),
+          },
+        },
+      },
+    },
+  },
 });
