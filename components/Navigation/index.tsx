@@ -7,6 +7,7 @@ import {
   // IconLogout,
   // IconSwitchHorizontal,
   IconDogBowl,
+  IconId,
 } from '@tabler/icons-react';
 import classes from '@/components/Navigation/index.module.css';
 
@@ -38,6 +39,11 @@ const navLinks = [
     icon: IconDogBowl,
     label: 'Pet Food Recipe Calculator',
     href: '/pet-food-recipe-calculator',
+  },
+  {
+    icon: IconId,
+    label: 'Resume',
+    href: '/resume',
   },
 ];
 

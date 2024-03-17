@@ -1,7 +1,7 @@
 'use client';
 
 import { PropsWithChildren } from 'react';
-import { AppShell, Burger } from '@mantine/core';
+import { AppShell, Burger, Container } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 
 import Navigation from '@/components/Navigation';
@@ -27,7 +27,9 @@ export default function AppShellClient(props: PropsWithChildren<{}>) {
 
       <Navigation />
 
-      <AppShell.Main bg="gray.1">{children}</AppShell.Main>
+      <AppShell.Main bg="gray.1">
+        <Container size="md">{children}</Container>
+      </AppShell.Main>
       <AppShell.Footer>Footer</AppShell.Footer>
     </AppShell>
   );
