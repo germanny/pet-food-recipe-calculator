@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function Resume() {
   return (
-    <div>
+    <>
       <Title order={1}>Resume</Title>
       <Title order={2}>Jen Germann</Title>
       <p>
@@ -16,12 +16,12 @@ export default function Resume() {
       </p>
       <Title order={3}>PROFESSIONAL SUMMARY</Title>
       <p>
-        Versatile software developer with a strong understanding of software
-        engineering concepts, known for collaborative skills, and a history of
-        delivering significant outcomes independently. Extensive experience in
-        full-stack development, producing well-documented, thoroughly-tested,
-        and functional code. Skilled in effective communication, idea sharing,
-        and mentorship.
+        Versatile web application developer with a strong understanding of
+        software engineering concepts, known for collaborative skills, and a
+        history of delivering significant outcomes independently. Extensive
+        experience in full-stack development, producing well-documented,
+        thoroughly-tested, and functional code. Skilled in effective
+        communication, idea sharing, and mentorship.
       </p>
       <Title order={3}>TECHNICAL SKILLS</Title>
       <ul>
@@ -46,8 +46,10 @@ export default function Resume() {
       </ul>
       <Title order={3}>EXPERIENCE</Title>
       <dl>
-        <dt>
-          <strong>Senior Software Engineer</strong> | Red Ventures, LLC
+        <dt style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <div>
+            <strong>Senior Software Engineer</strong> | Red Ventures, LLC
+          </div>
           <em>February 2021 - Present</em>
         </dt>
         <dd>
@@ -84,8 +86,10 @@ export default function Resume() {
             </li>
           </ul>
         </dd>
-        <dt>
-          <strong>Engineering Manager</strong> | Red Ventures, LLC
+        <dt style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <div>
+            <strong>Engineering Manager</strong> | Red Ventures, LLC
+          </div>
           <em>March 2020 - February 2021</em>
         </dt>
         <dd>
@@ -114,8 +118,10 @@ export default function Resume() {
             </li>
           </ul>
         </dd>
-        <dt>
-          <strong>Web Developer</strong> | HigherEducation.com
+        <dt style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <div>
+            <strong>Web Developer</strong> | HigherEducation.com
+          </div>
           <em>August 2011 - March 2020</em>
         </dt>
         <dd>
@@ -251,6 +257,6 @@ export default function Resume() {
           </ul>
         </dd>
       </dl>
-    </div>
+    </>
   );
 }
