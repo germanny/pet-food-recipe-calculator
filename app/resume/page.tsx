@@ -67,8 +67,9 @@ export default function Resume() {
             </li>
             <li>
               Designed and led the implementation of an AWS-based event-driven
-              pipeline, facilitating on-demand container runs and real-time data
-              updates in the admin UI.
+              pipeline using Terraform for infrastructure configuration,
+              facilitating on-demand container runs and real-time data updates
+              in the admin UI.
             </li>
             <li>
               Employing Github Actions and AWS services for CI/CD, monitoring,
@@ -215,8 +216,9 @@ export default function Resume() {
             </li>
             <li>
               Wrote AWS Lambda functions to automate data processing via the
-              GraphQL API. Utilized AWS CloudWatch for monitoring and
-              troubleshooting the application
+              GraphQL API. Utilized Terraform to configure AWS infrastructure,
+              and AWS CloudWatch for monitoring and troubleshooting the
+              application
             </li>
             <li>
               Designed and built UI to visualize the data and provide insights
@@ -242,8 +244,9 @@ export default function Resume() {
               compress, and cache images on-the-fly.
             </li>
             <li>
-              Used AWS CloudWatch to monitor and troubleshoot the application
-              and Jest for testing the Lambda@Edge function.
+              Used AWS CloudWatch to monitor and troubleshoot the application,
+              Terraform to configure AWS infrastructure, and Jest for testing
+              the Lambda@Edge function.
             </li>
           </ul>
         </dd>
