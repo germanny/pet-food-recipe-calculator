@@ -1,6 +1,12 @@
 {
-  "extends": ["stylelint-config-standard-scss"],
+  "plugins": [
+    "stylelint-prettier"
+  ],
+  "extends": [
+    "stylelint-config-standard-scss"
+  ],
   "rules": {
+    "prettier/prettier": true,
     "custom-property-pattern": null,
     "selector-class-pattern": null,
     "scss/no-duplicate-mixins": null,
@@ -21,7 +27,9 @@
     "selector-pseudo-class-no-unknown": [
       true,
       {
-        "ignorePseudoClasses": ["global"]
+        "ignorePseudoClasses": [
+          "global"
+        ]
       }
     ]
   }

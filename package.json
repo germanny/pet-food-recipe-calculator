@@ -62,11 +62,12 @@
     "postcss": "^8.4.35",
     "postcss-preset-mantine": "1.13.0",
     "postcss-simple-vars": "^7.0.1",
-    "prettier": "3.2.5",
+    "prettier": "^3.2.5",
     "storybook": "^8.0.0",
     "storybook-dark-mode": "^3.0.3",
     "stylelint": "^16.2.1",
     "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-prettier": "^5.0.0",
     "ts-jest": "^29.1.2",
     "typescript": "5.4.2"
   }
