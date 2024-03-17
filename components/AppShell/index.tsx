@@ -1,10 +1,10 @@
 'use client';
 
+import { PropsWithChildren } from 'react';
 import { AppShell, Burger } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 
 import Navigation from '@/components/Navigation';
-import { PropsWithChildren } from 'react';
 
 export default function AppShellClient(props: PropsWithChildren<{}>) {
   const { children } = props;
@@ -21,12 +21,7 @@ export default function AppShellClient(props: PropsWithChildren<{}>) {
       padding="md"
     >
       <AppShell.Header withBorder={false}>
-        <Burger
-          opened={opened}
-          onClick={toggle}
-          hiddenFrom="sm"
-          size="sm"
-        />
+        <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
         <div>Logo</div>
       </AppShell.Header>
 

@@ -1,37 +1,36 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter, usePathname, useSearchParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { NavLink, Stack, Tooltip, rem } from '@mantine/core';
 import {
   IconHome2,
-  IconLogout,
-  IconSwitchHorizontal,
+  // IconLogout,
+  // IconSwitchHorizontal,
   IconDogBowl,
 } from '@tabler/icons-react';
 import classes from '@/components/Navigation/index.module.css';
 
-interface NavbarLinkProps {
-  icon: typeof IconHome2;
-  label: string;
-  href: string;
-  active?: boolean;
-}
+// interface NavbarLinkProps {
+//   icon: typeof IconHome2;
+//   label: string;
+//   href: string;
+//   active?: boolean;
+// }
 
-function NavbarLink({ icon: Icon, label, href, active }: NavbarLinkProps) {
-  return (
-    <Tooltip label={label} position="right" transitionProps={{ duration: 0 }}>
-      <NavLink
-        href={href}
-        leftSection={
-          <Icon style={{ width: rem(20), height: rem(20) }} stroke={1.5} />
-        }
-        // className={classes.link}
-        active={active || undefined}
-      />
-    </Tooltip>
-  );
-}
+// function NavbarLink({ icon: Icon, label, href, active }: NavbarLinkProps) {
+//   return (
+//     <Tooltip label={label} position="right" transitionProps={{ duration: 0 }}>
+//       <NavLink
+//         href={href}
+//         leftSection={
+//           <Icon style={{ width: rem(20), height: rem(20) }} stroke={1.5} />
+//         }
+//         // className={classes.link}
+//         active={active || undefined}
+//       />
+//     </Tooltip>
+//   );
+// }
 
 const navLinks = [
   { icon: IconHome2, label: 'Home', href: '/' },
@@ -47,7 +46,7 @@ export default function NavbarMinimal() {
 
   const links = navLinks.map((item, index) => (
     <Tooltip
-      key={item.label}
+      key={`${item.label}-${index}`}
       label={item.label}
       position="right"
       transitionProps={{ duration: 0 }}

@@ -3,7 +3,7 @@ module.exports = {
     'mantine',
     'plugin:@next/next/recommended',
     'plugin:jest/recommended',
-    'prettier',
+    'plugin:prettier/recommended',
   ],
   plugins: ['testing-library', 'jest'],
   overrides: [
