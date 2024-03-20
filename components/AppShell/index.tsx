@@ -5,6 +5,7 @@ import { AppShell, Burger, Container } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 
 import Navigation from '@/components/Navigation';
+import Aside from '@/components/Aside';
 
 export default function AppShellClient(props: PropsWithChildren<{}>) {
   const { children } = props;
@@ -13,8 +14,13 @@ export default function AppShellClient(props: PropsWithChildren<{}>) {
   return (
     <AppShell
       header={{ height: 60 }}
+      // aside={{
+      //   width: 300,
+      //   breakpoint: 'sm',
+      //   collapsed: { mobile: !opened },
+      // }}
       navbar={{
-        width: 80,
+        width: 50,
         breakpoint: 'sm',
         collapsed: { mobile: !opened },
       }}
@@ -25,12 +31,23 @@ export default function AppShellClient(props: PropsWithChildren<{}>) {
         <div>Logo</div>
       </AppShell.Header>
 
-      <Navigation />
+      <AppShell.Navbar withBorder={false}>
+        <Navigation />
+      </AppShell.Navbar>
 
-      <AppShell.Main bg="gray.1">
+      {/* <AppShell.Aside withBorder={false} bg="transparent">
+        <Aside />
+      </AppShell.Aside> */}
+
+      <AppShell.Main
+        style={{
+          background:
+            'url(https://res.cloudinary.com/germanny/image/upload/f_auto,fl_lossy,q_auto/v1/site/bg-module.png) no-repeat center 0 / 730px;',
+          backgroundColor: 'var(--mantine-color-beluga-1)',
+        }}
+      >
         <Container size="md">{children}</Container>
       </AppShell.Main>
-      <AppShell.Footer>Footer</AppShell.Footer>
     </AppShell>
   );
 }

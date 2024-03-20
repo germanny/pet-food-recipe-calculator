@@ -9,7 +9,6 @@ import {
   IconDogBowl,
   IconId,
 } from '@tabler/icons-react';
-import classes from '@/components/Navigation/index.module.css';
 
 // interface NavbarLinkProps {
 //   icon: typeof IconHome2;
@@ -37,8 +36,8 @@ const navLinks = [
   { icon: IconHome2, label: 'Home', href: '/' },
   {
     icon: IconDogBowl,
-    label: 'Pet Food Recipe Calculator',
-    href: '/pet-food-recipe-calculator',
+    label: 'Dog Food Recipe Calculator',
+    href: '/dog-food-recipe-calculator',
   },
   {
     icon: IconId,
@@ -62,6 +61,8 @@ export default function NavbarMinimal() {
         active={pathname === item.href}
         label={item.label}
         leftSection={<item.icon size="1rem" stroke={1.5} />}
+        color="malibu"
+        variant="filled"
         styles={{
           root: {
             maxHeight: rem(50),
@@ -75,8 +76,8 @@ export default function NavbarMinimal() {
   ));
 
   return (
-    <nav className={classes.navbar}>
-      <div className={classes.navbarMain}>
+    <nav>
+      <div>
         <Stack justify="center" gap={0}>
           {links}
         </Stack>
