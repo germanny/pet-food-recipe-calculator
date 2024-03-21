@@ -114,7 +114,7 @@ export default function Home() {
         //   },
         // }}
       >
-        <h1>Hi! I'm Jen.</h1>
+        <h1>Hi! I&apos;m Jen.</h1>
         <Text>
           As a Full Stack JavaScript engineer, I can design and build beautiful,
           user-friendly web and application interfaces, dive into server-side
@@ -122,7 +122,8 @@ export default function Home() {
           monitoring, and troubleshoot the entire stack.
         </Text>
         <Text my="lg">
-          I made a few things. Why don't you check them out while you're here?
+          I made a few things. Why don&apos;t you check them out while
+          you&apos;re here?
         </Text>
         {/* <Title order={2}>The Hub</Title> */}
         <Grid>{cards}</Grid>

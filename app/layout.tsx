@@ -1,5 +1,5 @@
 import '@mantine/core/styles.css';
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import { theme } from '../theme';
 
@@ -10,7 +10,7 @@ export const metadata = {
   description: 'Home of Jen Germann, software developer and educator',
 };
 
-export default function RootLayout({ children }: { children: any }) {
+export default function RootLayout({ children }: PropsWithChildren<{}>) {
   return (
     <html lang="en">
       <head>
