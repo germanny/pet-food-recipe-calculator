@@ -36,13 +36,13 @@ const navLinks = [
   { icon: IconHome2, label: 'Home', href: '/' },
   {
     icon: IconDogBowl,
-    label: 'Dog Food Recipe Calculator',
-    href: '/dog-food-recipe-calculator',
+    label: 'Recipe Calculator',
+    href: '/recipe-calculator',
   },
   {
     icon: IconId,
-    label: 'Resume',
-    href: '/resume',
+    label: 'Food Sources',
+    href: '/food-sources',
   },
 ];
 
