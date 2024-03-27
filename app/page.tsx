@@ -39,20 +39,6 @@ const cardData = [
     buttonLabel: 'Calculator',
     icon: IconDogBowl,
   },
-  {
-    title: 'Resume',
-    description:
-      'Looking for a fullstack engineer? Great! Check out my resume.',
-    link: '/resume',
-    buttonLabel: 'Resume',
-    icon: IconId,
-  },
-  // {
-  //   title: 'Fourth card',
-  //   description: 'Fourth card description',
-  //   link: '/',
-  //   buttonLabel: 'Go Home',
-  // },
 ];
 
 export default function Home() {
